@@ -1,0 +1,148 @@
+$sm:648px;
+$md:768px;
+$lg:1024px;
+$xl:1280px;
+$xxl:1440px;
+
+$black: #18191F;
+$purple: #8C30F5;
+body {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  margin: 0;
+  background: url('./assets/Background.png') no-repeat;
+  background-size: contain;
+  // & .bg-img {
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   width: 100%;
+  // }
+}
+.container {
+  max-width: 1140px;
+  margin:0 auto;
+}
+.btn {
+  &-primary {
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    border:none;
+    padding: 1em 2em;
+    background-color: $purple;
+    color:white;
+    cursor: pointer;
+    border-radius: 0.4em;
+
+  }
+}
+
+.background {
+  background-color: rgba(242, 247, 255, 0.7);
+}
+// header
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1.5em 0;
+  &__links {
+    display: flex;
+    align-items: center;
+    gap:2em;
+    & nav {
+      display: flex;
+      gap:2em;
+    }
+    & a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  &__stores {
+    display: flex;
+    gap:1em;
+  }
+}
+// hero 
+.hero {
+  max-width: 1140px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  align-items: flex-start;
+  margin-top: 10em;
+  & h1 {
+    font-size: 4.5em;
+    line-height: 136%;
+    font-weight: 800;
+  }
+}
+// logos
+.logos {
+  max-width: 1140px;
+  margin:0 auto;
+  background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  & div {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4em;
+    padding:2.5em 0;
+  }
+}
+//features 
+.features {
+  max-width: 1140px;
+  margin:0 auto;
+  text-align: center;
+  margin-top: 4em;
+  & h2 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    color:$black;
+  }
+  & p {
+    margin-top: 0.5em;
+    line-height: 178%;
+    color:$black;
+    max-width: 540px;
+    text-align: center;
+    margin:0 auto;
+  }
+  &__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2em 4em;
+    padding:3em 0;
+    & h3 {
+      font-size: 1.5em;
+      margin:0;
+      padding: 0;
+    }
+  }
+}
+//testemonial
+.testimonial {
+  background-color: #D5FAFC;
+  &__wrapper {
+    position: relative;
+    z-index: 0;
+    &__img {
+      position: absolute;
+      top: 0;
+      z-index: 0;
+    }
+    &__info {
+      z-index: 100;
+    }
+  }
+}
