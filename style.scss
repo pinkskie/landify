@@ -335,6 +335,9 @@ body {
   gap:2em;
   align-items: center;
   padding:4em 0;
+  & img {
+    max-width:400px;
+  }
   &__info {
     padding:0 3em;
     & h2 {
